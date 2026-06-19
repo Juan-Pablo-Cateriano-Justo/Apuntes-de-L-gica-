@@ -5,127 +5,209 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f6f9;
-    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0c0f12; /* Fondo oscuro cibernético */
+    color: #00f0ff; /* Texto principal en cian neón */
     padding: 25px;
     max-width: 1100px;
     margin: 0 auto;
+    text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
 }
 
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #ff0055 0%, #00f0ff 100%);
     color: #ffffff;
-    padding: 25px;
+    padding: 35px;
     text-align: center;
-    border-radius: 6px;
-    margin-bottom: 20px;
+    border: 3px solid #fcee0a; /* Borde amarillo brillante */
+    border-radius: 0px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px #ff0055, inset 0 0 10px rgba(0,0,0,0.6);
+    /* Efecto de esquina cortada futurista */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
+}
+
+header h1 {
+    font-size: 2.6em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #000, 0 0 10px #ffffff;
+}
+
+header p {
+    color: #fcee0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #000;
+    margin-top: 5px;
 }
 
 nav {
-    background-color: #34495e;
-    padding: 12px;
-    border-radius: 6px;
-    margin-bottom: 20px;
+    background-color: #14191f;
+    padding: 15px;
+    border: 1px solid #00f0ff;
+    margin-bottom: 25px;
     text-align: center;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
 }
 
 nav a {
-    color: #ffffff;
+    color: #fcee0a; /* Enlaces en amarillo neón */
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #3498db;
-    text-decoration: underline;
+    color: #ff0055; /* Cambio a rosa eléctrico al pasar el mouse */
+    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055;
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #101419;
     padding: 35px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    margin-bottom: 20px;
+    border: 1px solid #1f2937;
+    border-left: 6px solid #ff0055; /* Acento magenta lateral */
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 
-h1 { margin-bottom: 5px; }
-
 h2 {
-    color: #2c3e50;
-    border-left: 5px solid #3498db;
-    padding-left: 12px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    color: #fcee0a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff0055;
+    padding-bottom: 5px;
+    text-shadow: 0 0 8px rgba(252, 238, 10, 0.4);
 }
 
 h3 {
-    color: #2c3e50;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    border-left: 3px solid #00f0ff;
+    padding-left: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     text-align: justify;
+    color: #b3edf1; /* Cian suave para no cansar la vista en párrafos */
+}
+
+a {
+    color: #00f0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff0055;
+    text-shadow: 0 0 8px #ff0055;
 }
 
 ul, ol {
-    margin-left: 25px;
-    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #b3edf1;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
+strong {
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(255,255,255,0.4);
+}
+
+/* Bloques de ejemplos - estilo Celda de Datos Hacker */
 .example {
-    background-color: #f8f9fa;
-    border-left: 4px solid #95a5a6;
-    padding: 15px;
-    margin: 15px 0;
-    font-style: italic;
-    border-radius: 4px;
+    background-color: #1a0813;
+    border: 1px dashed #ff0055;
+    border-left: 4px solid #ff0055;
+    padding: 18px;
+    margin: 20px 0;
+    color: #ffb3cc;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgba(255, 0, 85, 0.1);
 }
 
+/* Bloque de Tareas - Alerta Amarilla */
 .homework {
-    background-color: #fff9e6;
-    border: 1px solid #ffeeba;
-    color: #856404;
-    padding: 20px;
-    border-radius: 4px;
-    margin-top: 25px;
+    background-color: #1a1a0d;
+    border: 2px solid #fcee0a;
+    color: #fffbcc;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(252, 238, 10, 0.2), inset 0 0 10px rgba(252, 238, 10, 0.05);
 }
 
+.homework h3 {
+    color: #fcee0a;
+    border-left: 3px solid #fcee0a;
+}
+
+/* Bloque de Notas Grupales - Terminal de Red */
 .group-notes {
-    background-color: #e8f4fd;
-    border: 1px solid #bee5eb;
-    color: #0c5460;
-    padding: 20px;
-    border-radius: 4px;
-    margin-top: 25px;
+    background-color: #09151c;
+    border: 2px solid #00f0ff;
+    color: #cceeff;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
+.group-notes h3 {
+    color: #00f0ff;
+}
+
+blockquote {
+    background-color: #111827;
+    border-left: 4px solid #fcee0a;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #fff;
+}
+
+/* Tablas comparativas futuristas */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 30px 0;
+    background-color: #0d1117;
+    border: 1px solid #1f2937;
 }
 
 th, td {
-    border: 1px solid #dee2e6;
-    padding: 12px;
+    border: 1px solid #1f2937;
+    padding: 14px;
     text-align: left;
-    vertical-align: top;
 }
 
 th {
-    background-color: #34495e;
-    color: white;
+    background-color: #1c232b;
+    color: #fcee0a;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff0055;
+    letter-spacing: 1px;
 }
 
 tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #11161d;
+}
+
+td {
+    color: #b3edf1;
 }
